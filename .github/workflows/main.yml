@@ -16,7 +16,7 @@ jobs:
       with:
         source_folder: 'mover_test'
         destination_repo: 'site_push'
-        destination_folder: 'content/posts'
+        destination_folder: '/content/posts'
         user_email: 'hanzalsimon@gmail.com'
         user_name: 'SimonHanzal'
         commit_msg: 'Update the test files.'
