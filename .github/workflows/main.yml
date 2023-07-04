@@ -14,7 +14,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN }}
       with:
-        source_folder: 'mover_test'
+        source_folder: 'push_folder'
         destination_repo: 'simonhanzal/site_push'
         destination_folder: '/content/posts'
         user_email: 'hanzalsimon@gmail.com'
