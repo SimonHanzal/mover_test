@@ -14,9 +14,9 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_folder: 'push_folder'
-        destination_repo: 'push_test/posts'
-        destination_folder: 'test-dir'
+        source_folder: 'mover_test'
+        destination_repo: 'site_push'
+        destination_folder: 'content/posts'
         user_email: 'hanzalsimon@gmail.com'
         user_name: 'SimonHanzal'
         commit_msg: 'Update the test files.'
