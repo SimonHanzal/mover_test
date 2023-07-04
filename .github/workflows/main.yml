@@ -14,9 +14,9 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_folder: 'push/folder'
-        destination_repo: 'dmnemec/release-test'
+        source_folder: 'push_folder'
+        destination_repo: 'push_test/posts'
         destination_folder: 'test-dir'
-        user_email: 'devin.nemec@gmail.com'
-        user_name: 'dmnemec'
+        user_email: 'hanzalsimon@gmail.com'
+        user_name: 'SimonHanzal'
         commit_msg: 'Update the test files.'
