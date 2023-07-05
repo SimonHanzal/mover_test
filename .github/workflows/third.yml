@@ -1,0 +1,28 @@
+        
+name: Push main
+
+
+on:
+  push:
+    paths:
+      - 'push_main/**'
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test folder
+      uses: datalbry/copy_folder_to_another_repo_action@1.0.0
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN }}
+      with:
+        source_folder: 'push_main'
+        destination_repo: 'simonhanzal/site_push'
+        destination_folder: '/content'
+        keep_files: true
+        user_email: 'hanzalsimon@gmail.com'
+        user_name: 'SimonHanzal'
+        commit_msg: 'Update the test images.'
