@@ -5,7 +5,7 @@ name: Push image
 on:
   push:
     paths:
-      - 'push_images/**'
+      - 'push_image/**'
 
 jobs:
   copy-file:
@@ -19,7 +19,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN }}
       with:
-        source_folder: 'push_images'
+        source_folder: 'push_image'
         destination_repo: 'simonhanzal/site_push'
         destination_folder: '/static/images'
         user_email: 'hanzalsimon@gmail.com'
